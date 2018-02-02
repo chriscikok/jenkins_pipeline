@@ -7,6 +7,7 @@ def build(project_folder_arg) {
   } else {
       echo 'No'
   }
+  echo 'build completed'
 }
 
 def version() {
