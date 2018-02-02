@@ -18,3 +18,4 @@ def version() {
      bat(/"${mvnHome}\bin\mvn" -version/)
   }
 }
+return this
