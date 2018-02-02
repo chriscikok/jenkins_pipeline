@@ -1,7 +1,7 @@
 def build(project_folder_arg) {
   def mvnHome = tool 'M3'
   def curPath = pwd()
-  sh "'${mvnHome}/bin/mvn' -clean compile"
+  sh "'${mvnHome}/bin/mvn' clean compile"
   echo 'build completed'
 }
 
