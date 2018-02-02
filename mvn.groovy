@@ -4,4 +4,5 @@ def build(project_folder_arg) {
   dir(pwd()+'/'+${project_folder_arg})
   def exist = fileExists 'pom.xml'
   echo exist
-} return this
+}
+return this
