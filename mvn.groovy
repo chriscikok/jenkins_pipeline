@@ -2,7 +2,7 @@ def build(project_folder_arg) {
   def mvnHome = tool 'M3'
   def curPath = pwd()
   dir("${curPath}/${project_folder_arg}")
-  if (fileExists('pom.xml')) {
+  if (fileExists("pom.xml")) {
       echo 'Yes'
   } else {
       echo 'No'
