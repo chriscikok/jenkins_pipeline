@@ -1,13 +1,7 @@
 def build(project_folder_arg) {
   def mvnHome = tool 'M3'
   def curPath = pwd()
-  dir("${curPath}/${project_folder_arg}") {
-    if (fileExists("pom.xml")) {
-      echo 'true'
-    } else {
-      echo 'false'
-    }
-  }
+  sh "'${mvnHome}/bin/mvn' -clean compile"
   echo 'build completed'
 }
 
