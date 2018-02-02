@@ -23,6 +23,6 @@ node {
    }
    stage('build') {
     def mvn = load('mvn.groovy')
-    mvn.build(temp)
+    mvn.build('temp')
    }
 }
