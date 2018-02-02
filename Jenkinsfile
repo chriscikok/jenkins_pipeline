@@ -8,8 +8,7 @@ node {
 
    }
    stage('Version') {
-      def mvnHome
-      mvnHome = tool 'M3'
+      def mvnHome = tool 'M3'
       // Run the maven build
       if (isUnix()) {
          sh "'${mvnHome}/bin/mvn' -version"
