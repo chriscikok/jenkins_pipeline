@@ -2,14 +2,7 @@ def build(project_folder_arg) {
   def mvnHome = tool 'M3'
   def curPath = pwd()
   dir("${curPath}/${project_folder_arg}")
-  def exists = fileExists('pom.xml') {
-    echo 'Yes'
-  }
-  if (exists) {
-      echo 'Yes'
-  } else {
-      echo 'No'
-  }
+  fileExists('pom.xml')
   echo 'build completed'
 }
 
